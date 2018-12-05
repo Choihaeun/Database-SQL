@@ -1,5 +1,5 @@
 CREATE TABLE reservation(
-	id INT NOT NULL,
+	id INT AUTO_INCREMENT NOT NULL,
 	time DATE,
 	type_id INT NOT NULL,
 	room_number INT NOT NULL,
@@ -10,7 +10,7 @@ CREATE TABLE reservation(
 	check_out DATE,
 	payment_id INT,
 	state INT,
-	memo CHAR(100),
+	memo TEXT,
 	successful INT
 );
 
@@ -37,7 +37,7 @@ CREATE TABLE payment_type(
 );
 
 CREATE TABLE imployee_information(
-	id INT NOT NULL,
+	id INT AUTO_INCREMENT NOT NULL,
 	name VARCHAR(20),
 	sex VARCHAR(5),
 	date_of_birth DATE,
@@ -57,7 +57,7 @@ CREATE TABLE imployee_information(
 
 
 CREATE TABLE guest_information(
-	id INT NOT NULL,
+	id INT AUTO_INCREMENT NOT NULL,
 	name VARCHAR(20),
 	sex VARCHAR(20),
 	date_of_birth DATE,
